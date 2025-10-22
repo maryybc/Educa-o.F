@@ -1,0 +1,83 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .navbar {
+
+    overflow: hidden;
+    background:  #f0e8c2 ;
+    color: white;
+
+ }
+
+ .navbar a {
+    color: #000000;
+    text-decoration: none;
+ }
+
+ .navbar ul {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+
+
+ }
+
+ #titulo {
+    text-align: center;
+    color: #000000 ;
+    background-color:  #f0e8c2 ;
+
+ }
+
+ header {
+    position: relative;
+ }
+
+ header h1 {
+    position: absolute;
+    left: calc(50%);
+    transform: translateX(-50%);
+
+ }
+
+ body {
+    background-image: url(/img/acdm.webp);
+ }
+
+ /* index4.html contato */
+ .formulario-campo {
+    display: flex;
+    flex: 1;
+    gap: 16px;
+    width: 50%;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    align-items: center;
+ }
+
+ .formulario-campo label {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+ }
+
+ .formulario-campo input,
+ .formulario-campo select,
+ .formulario-campo textarea {
+    width: 300px;
+    justify-self: end;
+ }
+
+.lista{
+   padding: 16px;
+}
+   .conteiner{
+      background-color: #f0e8c2 ;
+    border-radius: 24px;
+    margin: 48px auto;
+    padding: 10px 16px;
+    width: 800px;
+    box-sizing: border-box;
+   }
