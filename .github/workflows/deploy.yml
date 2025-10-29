@@ -1,9 +1,9 @@
-name: 🔥 Deploy & Quality
+name: 🚀 Deploy & Quality Assurance
 
-on: 
+on:
   push:
     branches:
-     - main 
+      - main
   workflow_dispatch:
 
 permissions:
@@ -17,28 +17,28 @@ concurrency:
 
 jobs:
   deploy:
-    name: 💛 Deploy to Github pages
+    name: 🚀 Deploy to Github pages
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     outputs:
       page_url: ${{ steps.deployment.outputs.page_url }}
 
-    enviroment:
+    environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: 0️⃣ Checkout code
-        uses: actions/checkout@v4 
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
 
-      - name: 1️⃣ Setup Pages
+      - name: 📄 Setup Pages
         uses: actions/configure-pages@v4
 
-      - name:  2️⃣ Upload artifact
+      - name: 📦 Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with: 
+        with:
           path: "."
 
-      - name: 4️⃣ Deploy to GitHub Pages
+      - name: 🚀 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
