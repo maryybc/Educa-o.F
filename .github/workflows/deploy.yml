@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
- deploy:
+  deploy:
     name: 🚀 Deploy to Github pages
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
